@@ -11,6 +11,7 @@ import { useAudioPlayer, useAudioPlayerStatus } from "expo-audio";
 import { meditations } from "@/data";
 
 import audio from "@assets/meditation/audio1.mp3";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 export default function MeditationDetails() {
   const { id } = useLocalSearchParams<{ id: string }>();
@@ -32,6 +33,7 @@ export default function MeditationDetails() {
 
   return (
     <SafeAreaView className="bg-orange-400 flex-1 p-2 justify-between">
+      <AnimatedBackground />
       {/* Page content */}
       <View className="flex-1">
         {/* Top part of the screen */}
